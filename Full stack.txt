@@ -1,0 +1,135 @@
+C And C++ Programming  : 
+Function : set of instructions it :
+user defined
+Pre defined function :
+git
+git hub
+
+Operators : 
+Arithmetic: +, -, *, /, %
+Relational : >, < , >=, <=, ==, !=
+Decision control structure : if, if else, if else if else
+Looping : while, for, do while
+
+Object Oriented Programming : 
+function  - method
+#include <stdio.h>
+void palindrome(int number)
+{
+    int temp  = number;
+    int rem = 0;
+    int rev = 0;
+    while(number>0)
+    {
+        rem  = number % 10;
+        rev = rev * 10 + rem;
+        number = number / 10;
+    }
+    printf("Reverse of number is: %d", rev);
+    
+}
+int main() {
+    
+    int num = 0;
+    printf("Enter the number to check ");
+    scanf("%d", &num);
+    palindrome(num);
+
+    return 0;
+}
+
+Even  loop / Odd Loop
+#include<stdio.h>
+void summation()
+{
+    int i = 1;
+    while(i<=100)
+    {
+        if(i%2==1)
+        {
+             printf("%d\n", i);
+            
+        }
+       
+        i=i+1;
+    }
+    
+}
+int main()
+{
+    summation();
+    return 0;
+}
+
+Summation : 
+#include<stdio.h>
+void summation()
+{
+    int i = 1;
+    int sum = 0;
+    while(i<=1000)
+    {
+        sum = sum + i;
+        i=i+1;
+    }
+    printf("Summation of numbers are: %d",sum);
+    
+    
+}
+int main()
+{
+    summation();
+    return 0;
+}
+
+Sum of even : 
+#include<stdio.h>
+void summation()
+{
+    int i = 1;
+    int sum = 0;
+    while(i<=1000)
+    {
+        if(i%2==0)
+        {
+            sum = sum + i;
+            
+        }
+        
+        i=i+1;
+    }
+    printf("Summation of numbers are: %d",sum);
+    
+    
+}
+int main()
+{
+    summation();
+    return 0;
+}
+
+Sum of odd : 
+#include<stdio.h>
+void summation()
+{
+    int i = 1;
+    int sum = 0;
+    while(i<=1000)
+    {
+        if(i%2==1)
+        {
+            sum = sum + i;
+            
+        }
+        
+        i=i+1;
+    }
+    printf("Summation of numbers are: %d",sum);
+    
+    
+}
+int main()
+{
+    summation();
+    return 0;
+}
